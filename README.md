@@ -1,6 +1,6 @@
 # Ccbx
 
-**TODO: Add description**
+A Church Community Builder api client for Elixir
 
 ## Installation
 
@@ -15,7 +15,22 @@ def deps do
 end
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/ccbx](https://hexdocs.pm/ccbx).
+Ensure `ccbx` is started before your application
 
+```elixir
+def application do
+  [application: [:ccbx]]
+end
+```
+
+## Usage
+
+## To Do
+
+## Author
+
+- [Anthony Falzetti](https://github.com/anthonyfalzetti)
+
+## License
+
+- See [License](LICENSE) for more details.
