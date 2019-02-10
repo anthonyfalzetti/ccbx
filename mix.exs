@@ -11,6 +11,7 @@ defmodule Ccbx.MixProject do
       source_url: "https://github.com/anthonyfalzetti/ccbx",
       description: "A Church Community Builder api client for Elixir",
       package: package(),
+      docs: docs(),
       deps: deps()
     ]
   end
@@ -34,7 +35,21 @@ defmodule Ccbx.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:ex_doc, "~> 0.19", only: :dev}
+      {:ex_doc, "~> 0.19", only: :dev, runtime: false}
     ]
+  end
+
+
+  # Docs
+  defp docs() do
+    [
+      name: "Ccbx",
+        source_url: "https://github.com/anthonyfalzetti/ccbx",
+        homepage_url: "http://YOUR_PROJECT_HOMEPAGE",
+        docs: [
+          main: "Ccbx", # The main page in the docs
+          extras: ["README.md"]
+        ]
+     ]
   end
 end
